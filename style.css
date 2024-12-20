@@ -1,0 +1,252 @@
+
+body {
+    background: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #204F0A0F;
+    width: 90%;
+    height: 8vh;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+  }
+  
+  .links {
+    display: flex;
+    gap: 1vw;
+  }
+  
+  .head .links a {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: black;
+  }
+  
+  .head h1 {
+    font-size: 2rem;
+    
+    
+  }
+  .DREAMSCAPE{
+    text-align: center;
+    font-size: 48px
+  
+  }
+  
+  
+  
+  section {
+    padding: 48px 48px;
+  }
+  
+  #projects {
+    width: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+  
+  #projects div {
+    
+    margin-bottom: 48px;
+    transition: 0.4s ease;
+  }
+  
+  #projects div:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease;
+  }
+  
+  #projects div img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  #projects div h4 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  #projects div p {
+    font-size: 17px;
+    margin: 0;
+  }
+  #about-me h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  #about-me {
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    width: 70vw;
+    margin-left: 13vw;
+  }
+  
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 48px;
+    text-align: center;
+  }
+  
+  #contact h4 {
+    font-size: 28px;
+    line-height: 32px;
+    font-family: serif;
+    margin: 0px;
+  }
+  
+  
+  #contact form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  #contact button {
+    color: #fff;
+    background-color: #000000;
+    width: 40vw;
+    border-radius: 8px;
+    padding: 16px 8px;
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  
+  #contact input {
+    font-size: 20px;
+    padding: 8px 16px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    color: #000000;
+    width: 56px;
+    height: 64px;
+    text-align: center;
+  }
+  
+  #contact a {
+    margin-top: 32px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    display: flex;
+    padding: 48px;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+  }
+  
+  footer p {
+    font-size: 3vw;
+    
+  }
+  
+  
+  .slideDown {
+    animation: 1.5s slideDown ease;
+  }
+  
+  
+  
+  
+  
+  @keyframes slideDown {
+    0% {
+      opacity: 0%;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .head {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    #projects {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      
+    }
+    #about-me h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+   
+  }
+  @media only screen and (max-width: 500px) {
+    .head {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .head h1 {
+      margin-bottom: 1rem;
+    }
+  
+    #projects {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    #about-me h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    #contact {
+      padding: 100px 20px;
+    }
+    #contact input {
+      width: 20px;
+      text-align: center;
+    }
+  }
+  .nav-logo{
+    font-family: Syne;
+font-size: 42px;
+font-weight: 800;
+line-height: 42px;
+letter-spacing: -0.04em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  }
+.slideDown{
+font-family: "Dancing Script", serif;
+font-size: 120px;
+font-weight: 400;
+line-height: 120px;
+letter-spacing: -0.02em;
+text-align: center;
+}
