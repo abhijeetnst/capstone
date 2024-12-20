@@ -1,2 +1,2 @@
-# inculcate
+# capstone 
 project
